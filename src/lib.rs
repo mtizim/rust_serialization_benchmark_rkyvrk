@@ -1,64 +1,64 @@
 // wiring causes this clippy lint everywhere
 #![cfg_attr(feature = "wiring", allow(clippy::manual_async_fn))]
 
-#[cfg(feature = "bilrost")]
-pub mod bench_bilrost;
-#[cfg(feature = "bincode")]
-pub mod bench_bincode;
-#[cfg(feature = "bincode1")]
-pub mod bench_bincode1;
+// #[cfg(feature = "bilrost")]
+// pub mod bench_bilrost;
+// #[cfg(feature = "bincode")]
+// pub mod bench_bincode;
+// #[cfg(feature = "bincode1")]
+// pub mod bench_bincode1;
 #[cfg(feature = "bitcode")]
 pub mod bench_bitcode;
-#[cfg(feature = "borsh")]
-pub mod bench_borsh;
-#[cfg(feature = "capnp")]
-pub mod bench_capnp;
-#[cfg(feature = "cbor4ii")]
-pub mod bench_cbor4ii;
-#[cfg(feature = "ciborium")]
-pub mod bench_ciborium;
-#[cfg(feature = "databuf")]
-pub mod bench_databuf;
-#[cfg(feature = "dlhn")]
-pub mod bench_dlhn;
-#[cfg(feature = "flatbuffers")]
-pub mod bench_flatbuffers;
-#[cfg(feature = "msgpacker")]
-pub mod bench_msgpacker;
-#[cfg(feature = "nachricht-serde")]
-pub mod bench_nachricht_serde;
-#[cfg(feature = "nanoserde")]
-pub mod bench_nanoserde;
-#[cfg(feature = "scale")]
-pub mod bench_parity_scale_codec;
-#[cfg(feature = "postcard")]
-pub mod bench_postcard;
-#[cfg(feature = "pot")]
-pub mod bench_pot;
-#[cfg(feature = "prost")]
-pub mod bench_prost;
-#[cfg(feature = "rkyv")]
-pub mod bench_rkyv;
-#[cfg(feature = "rmp-serde")]
-pub mod bench_rmp_serde;
-#[cfg(feature = "ron")]
-pub mod bench_ron;
-#[cfg(feature = "savefile")]
-pub mod bench_savefile;
-#[cfg(feature = "serde_bare")]
-pub mod bench_serde_bare;
-#[cfg(feature = "serde-brief")]
-pub mod bench_serde_brief;
-#[cfg(feature = "serde_cbor")]
-pub mod bench_serde_cbor;
-#[cfg(feature = "serde_json")]
-pub mod bench_serde_json;
-#[cfg(feature = "simd-json")]
-pub mod bench_simd_json;
-#[cfg(feature = "speedy")]
-pub mod bench_speedy;
-#[cfg(feature = "wiring")]
-pub mod bench_wiring;
+// #[cfg(feature = "borsh")]
+// pub mod bench_borsh;
+// #[cfg(feature = "capnp")]
+// pub mod bench_capnp;
+// #[cfg(feature = "cbor4ii")]
+// pub mod bench_cbor4ii;
+// #[cfg(feature = "ciborium")]
+// pub mod bench_ciborium;
+// #[cfg(feature = "databuf")]
+// pub mod bench_databuf;
+// #[cfg(feature = "dlhn")]
+// pub mod bench_dlhn;
+// #[cfg(feature = "flatbuffers")]
+// pub mod bench_flatbuffers;
+// #[cfg(feature = "msgpacker")]
+// pub mod bench_msgpacker;
+// #[cfg(feature = "nachricht-serde")]
+// pub mod bench_nachricht_serde;
+// #[cfg(feature = "nanoserde")]
+// pub mod bench_nanoserde;
+// #[cfg(feature = "scale")]
+// pub mod bench_parity_scale_codec;
+// #[cfg(feature = "postcard")]
+// pub mod bench_postcard;
+// #[cfg(feature = "pot")]
+// pub mod bench_pot;
+// #[cfg(feature = "prost")]
+// pub mod bench_prost;
+// // #[cfg(feature = "rkyv")]
+// // pub mod bench_rkyv;
+// #[cfg(feature = "rmp-serde")]
+// pub mod bench_rmp_serde;
+// #[cfg(feature = "ron")]
+// pub mod bench_ron;
+// #[cfg(feature = "savefile")]
+// pub mod bench_savefile;
+// #[cfg(feature = "serde_bare")]
+// pub mod bench_serde_bare;
+// #[cfg(feature = "serde-brief")]
+// pub mod bench_serde_brief;
+// #[cfg(feature = "serde_cbor")]
+// pub mod bench_serde_cbor;
+// #[cfg(feature = "serde_json")]
+// pub mod bench_serde_json;
+// #[cfg(feature = "simd-json")]
+// pub mod bench_simd_json;
+// #[cfg(feature = "speedy")]
+// pub mod bench_speedy;
+// #[cfg(feature = "wiring")]
+// pub mod bench_wiring;
 pub mod datasets;
 
 use core::{mem, ops};

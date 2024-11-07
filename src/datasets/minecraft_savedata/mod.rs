@@ -69,8 +69,8 @@ pub enum GameType {
     Spectator,
 }
 
-#[cfg(feature = "rkyv")]
-unsafe impl rkyv::traits::NoUndef for ArchivedGameType {}
+// #[cfg(feature = "rkyv")]
+// unsafe impl rkyv::traits::NoUndef for ArchivedGameType {}
 
 impl Generate for GameType {
     fn generate<R: Rng>(rand: &mut R) -> Self {
